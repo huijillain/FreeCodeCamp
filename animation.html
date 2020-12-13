@@ -10,13 +10,24 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
-  #ball1 {
+
+  /* #ball1 {
     left: 27%;
-    /* animation-timing-function: linear; */
     animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
   }
 
   #ball2 {
+    left: 56%;
+    animation-timing-function: ease-out;
+  } */
+
+  #red {
+    background: red;
+    left: 27%;
+    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  }
+  #blue {
+    background: blue;
     left: 56%;
     animation-timing-function: ease-out;
   }
@@ -31,5 +42,7 @@
   }
 </style>
 
-<div class="balls" id="ball1"></div>
-<div class="balls" id="ball2"></div>
+<!-- <div class="balls" id="ball1"></div>
+<div class="balls" id="ball2"></div> -->
+<div class="balls" id="red"></div>
+<div class="balls" id="blue"></div>
