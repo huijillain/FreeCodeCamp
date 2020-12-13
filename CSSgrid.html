@@ -7,12 +7,15 @@
   }
   .d3 {
     background: PaleTurquoise;
+    justify-self: center;
   }
   .d4 {
     background: LightPink;
   }
   .d5 {
     background: PaleGreen;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
   }
 
   .container {
@@ -21,6 +24,11 @@
     background: LightGray;
     display: grid;
     grid-template-columns: 100px 100px 100px;
+    /* grid-template-rows: 80px 80px; */
+    grid-template-rows: 1fr 80px 3fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    /* grid-gap: 10px 20px; row value first, then column value*/
   }
 </style>
 
