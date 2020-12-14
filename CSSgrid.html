@@ -17,6 +17,8 @@
     grid-column: 2 / 4;
     grid-row: 2 / 4;
     /* align-self: center; */
+    grid-area: 3/1/4/4; /* horizontal start/ vertical start/ horizontal end/ vertical end */
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 
   .container {
@@ -24,14 +26,18 @@
     width: 100%;
     background: LightGray;
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    /* grid-template-columns: 100px 100px 100px; */
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(60px, 1fr)
+    ); /* another one is auto-fit */
     /* grid-template-rows: 80px 80px; */
     grid-template-rows: 1fr 80px 3fr;
     grid-row-gap: 10px;
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
     /* grid-gap: 10px 20px; row value first, then column value*/
-    justify-items: start; /* Align all items horizontally */
-    align-items: end; /* vertical alignment for all items in grid */
+    /* justify-items: start; Align all items horizontally */
+    /*  align-items: center; vertical alignment for all items in grid */
   }
 </style>
 
