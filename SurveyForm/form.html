@@ -1,74 +1,95 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <!DOCTYPE html>
 <html>
-<head>
-<title>Website design || e-Commerce development</title>
-<link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="survey"/>
+        <meta name="autor" content="Sky Jillain"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Survey Form || Website design & E-commerce development</title>
+    </head>
   
-<body id="overlay">
+<body>
+<header class="header">
+<h1 id="title" class="text-center">Digital4u.ca Survey Form</h1>
+<p id="description" class="description text-center">Thank you for taking the time to help us improve the platform</p>
+</header>
+  
+<div id="container">
+  <form id="survey-form">
 
-<h1 id="title">Digital4u.ca Survey Form</h1>
-<p id="description">Thank you for taking the time to help us improve the platform</p>
-  
-<div>
-  <form action="/action_page.php" id="survey-form">
+    <div class="form-group">
     <label for="name" id="name-label">Name</label><br>
-    <input id="name" type="text" placeholder="Enter your name" required><br><br>
+    <input autofocus 
+    id="name" 
+    type="text" 
+    class="form-control"
+    placeholder="Enter your name" required></div><br>
+
+    <div class="form-group">
         <label for="email" id="email-label">Email</label><br>
-    <input id="email" type="email" placeholder="Enter your Email" required><br><br>
-        <label for="age" id="number-label">Age(optional)</label><br>
-    <input id="number" type="number" placeholder="Age" min="1" max="150">
-<br><br>
-    <label for="role">Which option best describes your current role?</label><br>
-    <select id="dropdown" name="role">
-      <option selected>Select current role</option>
+    <input id="email" type="email" class="form-control" placeholder="Enter your Email" required></div><br>
+
+    <div class="form-group">
+        <label for="age" id="number-label">Age<span class="clue">(optional)</span></label><br>
+    <input id="number" type="number" class="form-control" placeholder="Age" min="1" max="150" required></div>
+
+<div class="form-group">
+    <p>Which option best describes your current role?</p>
+
+    <select id="dropdown" name="role" class="form-control" required>
+      <option disabled selected value>Select current role</option>
       <option value="student">Student</option>
       <option value="Full Time Job">Full Time Job</option>
       <option value="Full Time Learner">Full Time Learner</option>
-    </select><br><br>
+    </select></div><br>
     
-    <label>Would you recommend Digital4U.ca to a friend?</label><br>
-    <input type="radio" value="Definitely"/>    <label>Definitely</label>
+    <div class="form-group">
+    <p>Would you recommend Digital4U.ca to a friend?</p>
+    <input type="radio" name="Definitely" class="input-radio" value="radio-1"/>    <label>Definitely</label>
     <br>
-    <input type="radio"/>    <label>Maybe</label>
+    <input type="radio" name="maybe" class="input-radio" value="radio-2"/>    <label>Maybe</label>
     <br>
-    <input type="radio"/>    <label checked>Not sure</label>
-    <br><br>
+    <input type="radio" name="not-sure" class="input-radio" value="radio-3"/>    <label checked>Not sure</label></div>
+    <br>
     
-    <label>Which service did we assist with?</label><br>
+    <div class="form-group">
+    <p>Which service did we assist with?</p>
     <select id="service" name="service">
-      <option selected>Select an option</option>
+      <option disabled selected value>Select an option</option>
      <option>Website Design</option>
       <option>E-commerce Website Development</option>
     <option>Search Engine Optimization</option>
     <option>Google Analytics</option>
-    </section>
-    <br><br>
+    </section></div>
+    <br>
     
     <Select>
-        <br><br>
-    <label>What would you like to see improved?</label><br>
-    <input type="checkbox" value="frontend"/>
+        <br>
+    <p>What would you like to see improved?</p>
+    <input name="frontend" type="checkbox" value="frontend"/>
     <label>Front-end Projects</label><br>
-        <input type="checkbox" value="backend"/>
+        <input name="backend" type="checkbox" value="backend"/>
     <label>Back-end Projects</label><br>
-        <input type="checkbox" value="visualization"/>
+        <input type="checkbox" name="visualization" value="visualization"/>
     <label>Data Visualization</label><br>
-        <input type="checkbox" value="challenges" />
+        <input type="checkbox" name="challenges" value="challenges" />
     <label>Challenges</label><br>
-        <input type="checkbox" value="open source" />
+        <input type="checkbox" name="open-source" value="open-source" />
     <label>Open Source Community</label><br>
-        <input type="checkbox" value="help room" />
+        <input type="checkbox" name="help-room" value="help-room" />
     <label>Gitter help rooms</label><br>
-        <input type="checkbox" vlaue="videos" />
+        <input type="checkbox" name="videos" vlaue="videos" />
     <label>Videos</label><br>
-        <input type="checkbox" value="meetup">
+        <input type="checkbox" name="meetup" value="meetup">
     <label>City Meetups</label><br>
-        <input type="checkbox" value="wiki">
+        <input type="checkbox" name="wiki" value="wiki">
     <label>Wiki</label><br>
-        <input type="checkbox" value="forum">
+        <input type="checkbox" name="forum" value="forum">
     <label>Forum</label><br>
-            <input type="checkbox" value="additional courses">
+            <input type="checkbox" name="additional" value="additional courses">
     <label>Additional Courses</label>
 </Select>
     <br><br>
@@ -78,7 +99,7 @@
         Enter your comment here...
         </textarea>
     <br>
-        <input id="summit" type="submit" value="Submit"/>
+        <input id="submit" type="submit" value="Submit"/>
   </form>
   </div>
     
