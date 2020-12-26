@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digital4U.ca Website Development & SEO</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../style.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <style>
+            .background {
+        background-image: url("https://st.hzcdn.com/simgs/pictures/home-offices/east-london-victorian-terrace-fiona-duke-interiors-img~6441f95f0e823ff5_14-0857-1-f8503eb.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      /*cover the background with medium blue color*/
+      .layer {
+        background-color: rgba(27, 27, 50, 0.8);
+        opacity: 0.9;
+      }
+
+      /* CSS Arranged in decending/accending order */
+      #title {
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+      }
+
+      /* text below the title */
+      #description {
+        text-align: center;
+        font-style: italic;
+        font-weight: 200;
+        color: white;
+        font-size: 18px;
+      }
+
+      /* the main form */
+      #survey-form {
+        margin: 0 auto;
+        position: relative;
+        width: 60%;
+        background: #1b1b32;
+        color: white;
+        background-blend-mode: screen;
+        border-radius: 10px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        font-size: 19px;
+        font-family: Arial;
+      }
+
+      /* form inner structure */
+      #form-structure {
+        margin: 0 auto;
+        width: 90%;
+      }
+
+      /* IDS for input */
+      #name,
+      #email,
+      #number {
+        margin: 0 auto;
+        padding: 8px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #000000;
+        width: 100%;
+        resize: vertical;
+      }
+
+      /* IDs for labels */
+      #name-label,
+      #email-label,
+      #number-label {
+        padding-top: 20px;
+      }
+
+      /*form extra features */
+      #dropdown,
+      #drop {
+        padding: 9px;
+        border-radius: 5px;
+        font-family: Arial;
+      }
+
+      /*text for dropdown */
+      .text {
+        padding-top: 20px;
+      }
+
+      /* text-area */
+      .text-region {
+        background: #ffffff;
+        color: #000000;
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      /* button */
+      #submit {
+        width: 100%;
+        background-color: #06a442;
+        background: #06a442;
+      }
+
+      #submit a,
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 600px) {
+        #name,
+        #email,
+        #number,
+        .text-region {
+          width: 100%;
+          margin-top: 0;
+        }
+
+      #survey-form {
+        margin: 0 auto;
+        width: 90%;
+      }
+    </style>
+
+    <div class="background">
+      <div class="layer">
+        <h1 id="title">Digital4U.ca Survey Form</h1>
+
+        <p id="description">
+          Thank you for taking your time to help us improve the platform
+        </p>
+
+        <form id="survey-form">
+          <div id="form-structure">
+            <label id="name-label">Name</label>
+            <input
+              type="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            /><br />
+
+            <label id="email-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            /><br />
+
+            <label id="number-label" for="number">Number</label><br />
+            <input
+              type="number"
+              id="number"
+              for="number"
+              min="14"
+              max="40"
+              placeholder="Enter your number"
+            /><br />
+
+            <fieldset>
+              <label class="text"
+                >Which option best describe your current role?</label
+              ><br />
+
+              <select id="dropdown">
+                <option disable hidden select>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="prefer-note-to-say">Prefer not to say</option>
+                <option value="others">Others</option></select
+              ><br /><br />
+
+              <input type="radio" name="rad" value="rad" />
+              <label for="rad">Definitely</label><br />
+
+              <input type="radio" name="rad" value="rad" />
+              <label for="rad">May be</label><br />
+
+              <input type="radio" name="rad" value="rad" />
+              <label for="rad" selected>Not sure</label><br />
+
+              <label class="text"
+                >What Programming language would you love to learn?</label
+              ><br />
+              <select id="drop">
+                <option disable hidden select>Select an option</option>
+                <option value="java">Java</option>
+                <option value="C+">C+</option>
+                <option value="javascript">Javascript</option>
+                <option value="python">Python</option>
+                <option value="php">Php</option></select
+              ><br />
+            </fieldset>
+
+            <label class="text"
+              >What would you love to see improve?
+              <small>&#40;Check all that apply&#41;</small></label
+            ><br />
+            <input type="checkbox" value="font-end-projects" />
+            <label for="font-end-projects">Font-end-Projects</label><br />
+
+            <input type="checkbox" value="back-end-projects" />
+            <label for="back-end-projects">Back-end-Projects</label><br />
+
+            <input type="checkbox" value="data-visualization" />
+            <label for="data-visualization">Data Visualization</label><br />
+
+            <input type="checkbox" value="challenges" />
+            <label for="challenges">Challenges</label><br />
+
+            <input type="checkbox" value="open-source-community" />
+            <label for="open-source-community">Open Source Community</label
+            ><br />
+
+            <input type="checkbox" value="gitter-help-rooms" />
+            <label for="gitter-help-rooms">Gitter Help Rooms</label><br />
+
+            <input type="checkbox" value="videos" />
+            <label for="videos">Videos</label><br />
+
+            <input type="checkbox" value="city-meetups" />
+            <label for="city-meetups">City Meetups</label><br />
+
+            <input type="checkbox" value="wiki" />
+            <label for="wiki">Wiki</label><br />
+
+            <input type="checkbox" value="forums" />
+            <label for="forums">Forums</label><br />
+
+            <input type="checkbox" value="addtional-courses" />
+            <label for="additional-courses">Additional Courses</label><br />
+
+            <label>Any Comments or Suggestions?</label><br />
+
+            <textarea
+              class="text-region"
+              placeholder="Please enter your comment here.."
+              rows="5"
+            ></textarea
+            ><br />
+
+            <button class="btn btn-info" id="submit">
+              <a href="#">Submit</a>
+            </button>
+          </div>
+        </form>
+
+        <!--       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> This is to text code in FreeCodeCamp page-->
+      </div>
+    </div>
+  </head>
+</html>

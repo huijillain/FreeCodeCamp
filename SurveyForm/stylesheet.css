@@ -1,0 +1,117 @@
+/*background*/
+.background {
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.goodhousekeeping.com%2Fhome%2Fdecorating-ideas%2Fg1500%2Fdecor-ideas-living-room%2F&psig=AOvVaw3-tWF_S-4f02gc4QHH72Mb&ust=1608862779483000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjIvonH5e0CFQAAAAAdAAAAABAE");
+  background-size: cover;
+  background-position: center;
+}
+
+/*cover the background with medium blue color*/
+.layer {
+  background-color: rgba(27, 27, 50, 0.8);
+  opacity: 0.9;
+}
+
+/* CSS Arranged in decending/accending order */
+#title {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+}
+
+/* text below the title */
+#description {
+  text-align: center;
+  font-style: italic;
+  font-weight: 200;
+  color: white;
+  font-size: 18px;
+}
+
+/* the main form */
+#survey-form {
+  margin: 0 auto;
+  position: relative;
+  width: 60%;
+  background: #1b1b32;
+  color: white;
+  background-blend-mode: screen;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-size: 19px;
+  font-family: Arial;
+}
+
+/* form inner structure */
+#form-structure {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* IDS for input */
+#name,
+#email,
+#number {
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+  resize: vertical;
+}
+
+/* IDs for labels */
+#name-label,
+#email-label,
+#number-label {
+  padding-top: 20px;
+}
+
+/*form extra features */
+#dropdown,
+#drop {
+  padding: 9px;
+  border-radius: 5px;
+  font-family: Arial;
+}
+
+/*text for dropdown */
+.text {
+  padding-top: 20px;
+}
+
+/* text-area */
+.text-region {
+  background: #ffffff;
+  color: #000000;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* button */
+#submit {
+  width: 100%;
+  background-color: #06a442;
+  background: #06a442;
+}
+
+#submit a,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  #name,
+  #email,
+  #number,
+  .text-region {
+    width: 100%;
+    margin-top: 0;
+  }
+
+#survey-form {
+  margin: 0 auto;
+  width: 90%;
+}

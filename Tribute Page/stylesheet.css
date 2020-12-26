@@ -1,0 +1,86 @@
+#main {
+  background-color: #3b3838;
+  padding-top: 40px;
+  color: white;
+}
+
+#title {
+  font-family: Helvetica;
+  font-size: 38px;
+  text-align: center;
+}
+
+#img-div {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #969393;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#image {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+#img-caption {
+  padding-top: 15px;
+  font-family: Helvetica;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#tribute-info {
+  padding-top: 20px;
+  position: relative;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+h4 {
+  position: relative;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#tribute-link .endnote {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+}
+
+#tex {
+  padding-top: 14px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Helvetica;
+}
+
+@media only screen and (max-width: 600px) {
+  #tribute-info {
+    padding-top: 20px;
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+
+  #title {
+    font-family: Helvetica;
+    font-size: 30px;
+    text-align: center;
+  }
+}
